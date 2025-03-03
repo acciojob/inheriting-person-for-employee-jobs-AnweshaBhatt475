@@ -9,7 +9,6 @@ class Person {
   }
 }
 
-
 class Employee extends Person {
   constructor(name, age, jobTitle) {
     super(name, age); // Calling the parent class constructor
@@ -21,9 +20,11 @@ class Employee extends Person {
   }
 }
 
+// Do not change code below this line
+window.Person = Person;
+window.Employee = Employee;
 
-
-
+// Example usage
 let person = new Person("Alice", 25);
 person.greet(); 
 let employee = new Employee("Bob", 30, "Manager");
