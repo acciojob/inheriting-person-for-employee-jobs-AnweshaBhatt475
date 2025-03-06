@@ -30,3 +30,6 @@ person.greet();
 
 const employee = new Employee("Bob", 30, "Manager");
 employee.jobGreet(); 
+// Assigning classes to global scope
+window.Person = Person;
+window.Employee = Employee;
